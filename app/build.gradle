@@ -1,0 +1,69 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.mft100.gas.demo"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+        buildFeatures.viewBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // kotlin
+    implementation rootProject.ext.dependencies['kotlin:stdlib']
+    implementation rootProject.ext.dependencies['kotlin:stdlib-jkd7']
+
+    // android x
+    implementation rootProject.ext.dependencies['androidx:core-ktx']
+    implementation rootProject.ext.dependencies['androidx:appcompat']
+    implementation rootProject.ext.dependencies['androidx:constraint']
+    implementation rootProject.ext.dependencies['androidx:annotation']
+    implementation rootProject.ext.dependencies['androidx:slidingpane']
+
+    // qmui
+    implementation rootProject.ext.dependencies['qmui:core']
+    implementation rootProject.ext.dependencies['qmui:arch']
+    kapt rootProject.ext.dependencies['qmui:compiler']
+
+    // hilt
+    implementation rootProject.ext.dependencies['hilt:core']
+    kapt rootProject.ext.dependencies['hilt:compiler']
+
+    // widget
+    implementation rootProject.ext.dependencies['widget:recycler']
+
+    // commons
+    implementation rootProject.ext.dependencies['gson:android']
+    implementation rootProject.ext.dependencies['guava:android']
+    implementation rootProject.ext.dependencies['slf4j:android']
+
+    // rxjava
+    implementation rootProject.ext.dependencies['rxkotlin']
+    implementation rootProject.ext.dependencies['rxlifecycle']
+    implementation rootProject.ext.dependencies['rxbinding:api']
+    implementation rootProject.ext.dependencies['rxbinding:core']
+    implementation rootProject.ext.dependencies['rxbinding:appcompat']
+
+}

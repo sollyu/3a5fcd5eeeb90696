@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:qmui_skin_background="?attr/app_skin_common_background">
+
+    <com.qmuiteam.qmui.layout.QMUIConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/qmui_content_padding_horizontal"
+                android:text="@string/app_name"
+                android:textColor="?attr/qmui_skin_support_common_list_title_color"
+                android:textSize="?attr/qmui_common_list_item_title_h_text_size"
+                app:qmui_skin_text_color="?attr/qmui_skin_support_common_list_title_color" />
+        </LinearLayout>
+    </com.qmuiteam.qmui.layout.QMUIConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

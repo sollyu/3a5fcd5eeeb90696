@@ -1,0 +1,79 @@
+ext {
+    android = [
+        compileSdkVersion: 30,
+        buildToolsVersion: "30.0.2",
+        minSdkVersion    : 24,
+        targetSdkVersion : 30,
+    ]
+    dependencies = [
+        // kotlin
+        'kotlin:stdlib'         : 'org.jetbrains.kotlin:kotlin-stdlib:1.5.0',
+        'kotlin:stdlib-jkd7'    : 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.5.0',
+        'kotlin:reflect'        : 'org.jetbrains.kotlin:kotlin-reflect:1.5.0',
+
+        // android x
+        'androidx:core-ktx'     : 'androidx.core:core-ktx:1.3.2',
+        'androidx:appcompat'    : 'androidx.appcompat:appcompat:1.2.0',
+        'androidx:recyclerview' : 'androidx.recyclerview:recyclerview:1.2.0',
+        'androidx:constraint'   : 'androidx.constraintlayout:constraintlayout:2.0.4',
+        'androidx:annotation'   : 'androidx.annotation:annotation:1.2.0',
+        'androidx:slidingpane'  : 'androidx.slidingpanelayout:slidingpanelayout:1.1.0',
+        'androidx:room-runtime' : 'androidx.room:room-runtime:2.3.0',
+        'androidx:room-compiler': 'androidx.room:room-compiler:2.3.0',
+        'androidx:room-rxjava3' : 'androidx.room:room-rxjava3:2.3.0',
+        'androidx:room-guava'   : 'androidx.room:room-guava:2.3.0',
+        'androidx:room-cipher'  : 'net.zetetic:android-database-sqlcipher:4.4.3',
+
+        // qmui
+        'qmui:core'             : 'com.qmuiteam:qmui:2.0.0-alpha11',
+        'qmui:arch'             : 'com.qmuiteam:arch:2.0.0-alpha11',
+        'qmui:compiler'         : 'com.qmuiteam:arch-compiler:2.0.0-alpha11',
+
+        // widget
+        'widget:recycler'       : 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4',            // https://github.com/CymChad/BaseRecyclerViewAdapterHelper/
+        'widget:markdown:core'  : 'io.noties.markwon:core:4.6.2',                                      // https://github.com/noties/Markwon
+        'widget:markdown:tables': 'io.noties.markwon:ext-tables:4.6.2',                                // https://github.com/noties/Markwon/tree/master/markwon-ext-tables
+        'widget:fab'            : 'com.github.clans:fab:1.6.4',                                        // https://github.com/Clans/FloatingActionButton
+        'widget:search'         : 'com.github.Ferfalk:SimpleSearchView:0.2.0',                         // https://github.com/Ferfalk/SimpleSearchView
+
+        // hilt
+        'hilt:core'             : 'com.google.dagger:hilt-android:2.37',
+        'hilt:compiler'         : 'com.google.dagger:hilt-android-compiler:2.37',
+
+        // rxkotlin
+        'rxkotlin'              : 'io.reactivex.rxjava3:rxkotlin:3.0.0',
+        'rxlifecycle'           : 'com.trello.rxlifecycle4:rxlifecycle-android-lifecycle-kotlin:4.0.0',
+        'rxbinding:api'         : "com.jakewharton.rxbinding4:rxbinding:4.0.0",
+        'rxbinding:core'        : "com.jakewharton.rxbinding4:rxbinding-core:4.0.0",
+        'rxbinding:appcompat'   : "com.jakewharton.rxbinding4:rxbinding-appcompat:4.0.0",
+
+        // commons
+        'slf4j:android'         : 'org.slf4j:slf4j-android:1.7.30',
+        'gson:android'          : 'com.google.code.gson:gson:2.8.6',
+        'guava:android'         : 'com.google.guava:guava:30.1.1-android',
+        'guava:java'            : 'com.google.guava:guava:30.1.1-jre',
+        'commons:io'            : 'commons-io:commons-io:2.4',
+        'commons:cli'           : 'commons-cli:commons-cli:1.4',
+        'commons:text'          : 'org.apache.commons:commons-text:1.9',
+        'commons:ssl'           : 'ca.juliusdavies:not-yet-commons-ssl:0.3.9',
+        'commons:csv'           : 'com.opencsv:opencsv:5.4',
+        'github:pinyin'         : 'com.github.houbb:pinyin:0.2.1',                                      // https://github.com/houbb/pinyin
+
+        // glide
+        'glide:core'            : 'com.github.bumptech.glide:glide:4.12.0',                             // https://github.com/bumptech/glide
+        'glide:compiler'        : 'com.github.bumptech.glide:compiler:4.12.0',
+
+        // network
+        'okhttp:core'           : 'com.squareup.okhttp3:okhttp:4.8.1',
+        'okhttp:logging'        : 'com.squareup.okhttp3:logging-interceptor:4.8.1',
+        'retrofit:core'         : 'com.squareup.retrofit2:retrofit:2.9.0',
+        'retrofit:rxjava3'      : 'com.squareup.retrofit2:adapter-rxjava3:2.9.0',
+        'retrofit:gson'         : 'com.squareup.retrofit2:converter-gson:2.9.0',
+        'retrofit:scalars'      : 'com.squareup.retrofit2:converter-scalars:2.9.0',
+
+        // app center
+        'appcenter:analytics'   : 'com.microsoft.appcenter:appcenter-analytics:4.1.0',
+        'appcenter:crashes'     : 'com.microsoft.appcenter:appcenter-crashes:4.1.0',
+        'appcenter:distribute'  : 'com.microsoft.appcenter:appcenter-distribute:4.1.0',
+    ]
+}

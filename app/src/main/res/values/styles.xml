@@ -1,0 +1,18 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+
+        <item name="android:windowFullscreen">false</item>
+
+        <item name="qmui_skin_support_topbar_bg">@color/purple_200</item>
+        <item name="qmui_skin_support_topbar_title_color">@color/qmui_config_color_white</item>
+        <item name="qmui_skin_support_topbar_image_tint_color">@color/qmui_config_color_white</item>
+        <item name="qmui_skin_support_topbar_text_btn_color_state_list">@color/qmui_config_color_white</item>
+
+        <item name="qmui_skin_support_tip_dialog_bg">@color/purple_500</item>
+        <item name="qmui_dialog_min_width">320dp</item>
+
+    </style>
+
+    <style name="QMUI.TipDialog" parent="QMUI.Dialog" />
+</resources>
