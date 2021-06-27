@@ -76,38 +76,32 @@ internal class FragmentGas : FragmentBase(), View.OnClickListener {
         val context: Context = view.context
         val jsonData = context.assets.open("json/data01.json").reader(charset = Charsets.UTF_8).readText()
         val gasDataList = mGson.fromJson(jsonData, Array<GasPojoSummary>::class.java)
+        val delay: Long = if (mViewBinding.slidingPaneLayout.isOpen) 300L else 1L
 
-        val loadingFragment = FragmentGasLoading()
+        val content = FragmentGasContent(gasDataList.toMutableList(), delay)
+        softReference = SoftReference(content)
         val fragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.main_content, loadingFragment)
+        fragmentTransaction.replace(R.id.main_content, content)
         fragmentTransaction.commit()
 
-        view.postDelayed({
-            val content = FragmentGasContent(gasDataList.toMutableList())
-            softReference = SoftReference(content)
-            val fragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.main_content, content)
-            fragmentTransaction.commit()
-        }, 1)
+        mViewBinding.slidingPaneLayout.closePane()
     }
 
     private fun onClickLeftButton002(view: View) {
         val context: Context = view.context
         val jsonData = context.assets.open("json/data02.json").reader(charset = Charsets.UTF_8).readText()
         val gasDataList = mGson.fromJson(jsonData, Array<GasPojoSummary>::class.java)
+        val isSlideable = mViewBinding.slidingPaneLayout.isOpen
+        val delay: Long = if (mViewBinding.slidingPaneLayout.isOpen) 300L else 1L
+        logger.info("LOG:FragmentGas:onClickLeftButton002:isSlideable={} ", isSlideable)
 
-        val loadingFragment = FragmentGasLoading()
+        val content = FragmentGasContent(gasDataList.toMutableList(), delay)
+        softReference = SoftReference(content)
         val fragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.main_content, loadingFragment)
+        fragmentTransaction.replace(R.id.main_content, content)
         fragmentTransaction.commit()
 
-        view.postDelayed({
-            val content = FragmentGasContent(gasDataList.toMutableList())
-            softReference = SoftReference(content)
-            val fragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.main_content, content)
-            fragmentTransaction.commit()
-        }, 1)
+        mViewBinding.slidingPaneLayout.closePane()
     }
 
     private fun onClickTopBarBack(view: View) {

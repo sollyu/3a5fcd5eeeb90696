@@ -13,6 +13,7 @@ import com.chad.library.adapter.base.BaseMultiItemQuickAdapter
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import com.mft100.gas.demo.R
+import com.mft100.gas.demo.constant.ConstantApp
 import com.mft100.gas.demo.constant.ConstantGasType
 import com.mft100.gas.demo.databinding.FragmentGasContentBinding
 import com.mft100.gas.demo.databinding.ItemGasWidgetDashboardBinding
@@ -23,6 +24,7 @@ import com.mft100.gas.demo.fragment.gas.widget.GasWidgetDashboard
 import com.mft100.gas.demo.fragment.gas.widget.GasWidgetForm
 import com.mft100.gas.demo.fragment.gas.widget.GasWidgetHtml
 import com.mft100.gas.demo.hilt.provide.ProvideJavascriptEngine
+import com.qmuiteam.qmui.widget.QMUIEmptyView
 import com.trello.rxlifecycle4.android.lifecycle.kotlin.bindToLifecycle
 import com.trello.rxlifecycle4.android.lifecycle.kotlin.bindUntilEvent
 import dagger.hilt.android.AndroidEntryPoint
@@ -39,9 +41,11 @@ import kotlin.random.Random
 
 @FragmentScoped
 @AndroidEntryPoint
-internal class FragmentGasContent(private val mutableList: MutableList<GasPojoSummary>) : Fragment() {
+internal class FragmentGasContent(private val mutableList: MutableList<GasPojoSummary>,val delay: Long) : Fragment() {
 
     private lateinit var mViewBinding: FragmentGasContentBinding
+    private lateinit var mEmptyView: QMUIEmptyView
+
     private val mRecyclerViewAdapt: MultipleItemQuickAdapter = MultipleItemQuickAdapter()
 
     private val mLogger: Logger = LoggerFactory.getLogger(this.javaClass)
@@ -59,12 +63,14 @@ internal class FragmentGasContent(private val mutableList: MutableList<GasPojoSu
 
         val context: Context = view.context
 
+        mEmptyView = QMUIEmptyView(context)
+        mEmptyView.show("加载中……", ConstantApp.EMPTY_STRING)
         mViewBinding.recyclerView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         mViewBinding.recyclerView.adapter = mRecyclerViewAdapt
 
+        mRecyclerViewAdapt.setEmptyView(mEmptyView)
         mRecyclerViewAdapt.animationEnable = true
-        mRecyclerViewAdapt.setAnimationWithDefault(BaseQuickAdapter.AnimationType.AlphaIn);
-        mRecyclerViewAdapt.setList(mutableList)
+        mRecyclerViewAdapt.setAnimationWithDefault(BaseQuickAdapter.AnimationType.AlphaIn)
 
         Observable.interval(5000, 100, TimeUnit.MILLISECONDS)
             .subscribeOn(Schedulers.io())
@@ -111,6 +117,8 @@ internal class FragmentGasContent(private val mutableList: MutableList<GasPojoSu
                     logger.error("LOG:FragmentGasContent:onError", e)
                 }
             })
+
+        mViewBinding.root.postDelayed({mRecyclerViewAdapt.setList(mutableList)}, delay)
     }
 
     override fun onDestroy() {
