@@ -12,6 +12,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.scopes.FragmentScoped
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Single
+import io.reactivex.rxjava3.observers.DisposableSingleObserver
 import io.reactivex.rxjava3.schedulers.Schedulers
 import org.jetbrains.annotations.NotNull
 import org.slf4j.Logger
@@ -51,7 +52,13 @@ internal class FragmentGas : FragmentBase(), View.OnClickListener {
             .delay(1, TimeUnit.SECONDS)
             .map { mViewBinding.slidingPaneLayout.closePane() }
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe()
+            .subscribe(object : DisposableSingleObserver<Boolean>() {
+                override fun onSuccess(t: Boolean) {
+                }
+
+                override fun onError(e: Throwable?) {
+                }
+            })
     }
 
     override fun onClick(@NotNull view: View) {
