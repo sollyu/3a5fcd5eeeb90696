@@ -53,11 +53,14 @@ dependencies {
 
     // widget
     implementation rootProject.ext.dependencies['widget:recycler']
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
 
     // commons
-    implementation rootProject.ext.dependencies['gson:android']
-    implementation rootProject.ext.dependencies['guava:android']
-    implementation rootProject.ext.dependencies['slf4j:android']
+    implementation rootProject.ext.dependencies['j2v8']
+    implementation rootProject.ext.dependencies['gson']
+    implementation rootProject.ext.dependencies['guava']
+    implementation rootProject.ext.dependencies['slf4j']
+    implementation rootProject.ext.dependencies['glide:core']
 
     // rxjava
     implementation rootProject.ext.dependencies['rxkotlin']

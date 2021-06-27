@@ -1,0 +1,65 @@
+[
+    {
+        "is_full": true,
+        "type": 100,
+        "items": [
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"}
+        ],
+        "title": "仪表盘"
+    },
+    {
+        "is_full": false,
+        "type": 200,
+        "items": [
+            {"type": 0, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 0, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
+            {"type": 0, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"}
+        ],
+        "title": "系统变量"
+    },
+    {
+        "is_full": false,
+        "type": 200,
+        "items": [
+            {"type": 0, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 0, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
+            {"type": 0, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 0, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 0, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
+            {"type": 0, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"}
+        ],
+        "title": "发动机状态"
+    },
+    {
+        "is_full": false,
+        "type": 100,
+        "items": [
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "99"}
+        ],
+        "title": "仪表盘"
+    },
+    {
+        "is_full": true,
+        "type": 300,
+        "items": [
+            {"type": 300, "value": "<body class=\"ke-content\"><p><span style=\"color:#222226;font-family:&quot;font-size:14px;background-color:#FFFFFF;\">， 在心里想着如何实现</span></p><p><span style=\"color:#222226;font-family:&quot;font-size:14px;background-color:#FFFFFF;\">&nbsp;然后网上搜索<em>如何</em>实现复杂布局页面，当<span style=\"color:#E53333;\">初我也</span>是这么过来的， 可以说踩<span style=\"font-size:16px;\">了很多很</span>大的坑 ，  所<span style=\"font-family:Times New Roman;\">以决<u>定写</u></span><u>下</u>这篇博客 ，  供各位猿猿参观 ， 想相信看完此篇 ， 绝对是最后一篇 ，  不用再找了 ， 当然 此篇为进阶篇 。</span></p><p><span style=\"color:#222226;font-family:&quot;font-size:14px;background-color:#FFFFFF;\">&nbsp;如果你对r<s>ecycleview</s> 还不熟悉 ， <em>建议先了解r</em>ecyclev<img src=\"https://avatar.csdnimg.cn/6/E/1/3_qq_41848570.jpg\" data-ke-src=\"https://avatar.csdnimg.cn/6/E/1/3_qq_41848570.jpg\" border=\"0\" alt=\"\"></span></p><p><span style=\"color:#222226;font-family:&quot;font-size:14px;background-color:#FFFFFF;\"><br></span></p></body>"}
+        ],
+        "title": "仪表盘"
+    }
+]

@@ -48,15 +48,12 @@ ext {
         'rxbinding:appcompat'   : "com.jakewharton.rxbinding4:rxbinding-appcompat:4.0.0",
 
         // commons
-        'slf4j:android'         : 'org.slf4j:slf4j-android:1.7.30',
-        'gson:android'          : 'com.google.code.gson:gson:2.8.6',
-        'guava:android'         : 'com.google.guava:guava:30.1.1-android',
-        'guava:java'            : 'com.google.guava:guava:30.1.1-jre',
+        'j2v8'                  : 'com.eclipsesource.j2v8:j2v8:6.2.0@aar',                              // https://github.com/eclipsesource/j2v8
+        'slf4j'                 : 'org.slf4j:slf4j-android:1.7.30',
+        'gson'                  : 'com.google.code.gson:gson:2.8.6',
+        'guava'                 : 'com.google.guava:guava:30.1.1-android',
         'commons:io'            : 'commons-io:commons-io:2.4',
-        'commons:cli'           : 'commons-cli:commons-cli:1.4',
         'commons:text'          : 'org.apache.commons:commons-text:1.9',
-        'commons:ssl'           : 'ca.juliusdavies:not-yet-commons-ssl:0.3.9',
-        'commons:csv'           : 'com.opencsv:opencsv:5.4',
         'github:pinyin'         : 'com.github.houbb:pinyin:0.2.1',                                      // https://github.com/houbb/pinyin
 
         // glide
@@ -70,10 +67,5 @@ ext {
         'retrofit:rxjava3'      : 'com.squareup.retrofit2:adapter-rxjava3:2.9.0',
         'retrofit:gson'         : 'com.squareup.retrofit2:converter-gson:2.9.0',
         'retrofit:scalars'      : 'com.squareup.retrofit2:converter-scalars:2.9.0',
-
-        // app center
-        'appcenter:analytics'   : 'com.microsoft.appcenter:appcenter-analytics:4.1.0',
-        'appcenter:crashes'     : 'com.microsoft.appcenter:appcenter-crashes:4.1.0',
-        'appcenter:distribute'  : 'com.microsoft.appcenter:appcenter-distribute:4.1.0',
     ]
 }
