@@ -1,0 +1,327 @@
+[
+    {
+        "is_full": true,
+        "type": 100,
+        "items": [
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"}
+        ],
+        "title": "仪表盘"
+    },
+    {
+        "is_full": false,
+        "type": 200,
+        "items": [
+            {"type": 204, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"}
+        ],
+        "title": "系统变量"
+    },
+    {
+        "is_full": false,
+        "type": 200,
+        "items": [
+            {"type": 202, "title": "当前设定点", "unit": "prm", "value": "true"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 203, "title": "发动机转速", "unit": "prm", "value": "true"},
+            {"type": 202, "title": "当前设定点", "unit": "prm", "value": "false"},
+            {"type": 203, "title": "当前设定点", "unit": "prm", "value": "false"},
+            {"type": 204, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"}
+        ],
+        "title": "发动机状态"
+    },
+    {
+        "is_full": false,
+        "type": 100,
+        "items": [
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "99"}
+        ],
+        "title": "仪表盘"
+    },
+    {
+        "is_full": true,
+        "type": 300,
+        "items": [
+            {"type": 300, "value": "<h2>关于我们👍</h2><font color='red'>上海星融汽车科技有限公司</font>，是国家<b>重点</b>扶持的高新技术企业，拥有专利及著作权40余项。公司聚焦商用车后市场领域，为全国商用车维修技师提供技术服务。<br>共轨之家服务全国的商用车维修站，用户数量超过<font color='green'>40万人</font>，是一家以商用车维修技术为主轴，后市场大数据为驱动的互联网数据公司。<br>公司意在构建一个商用车后市场的产业互联网，通过多重数据抓手，切入商用车后市场，打造商用车维保大数据，<u>以形成立体的竞争壁垒</u>，进而推动整个商用车后市场的产业升级进程。"}
+        ],
+        "title": "仪表盘"
+    },
+    {
+        "is_full": true,
+        "type": 100,
+        "items": [
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"}
+        ],
+        "title": "仪表盘"
+    },
+    {
+        "is_full": false,
+        "type": 200,
+        "items": [
+            {"type": 204, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"}
+        ],
+        "title": "系统变量"
+    },
+    {
+        "is_full": false,
+        "type": 200,
+        "items": [
+            {"type": 202, "title": "当前设定点", "unit": "prm", "value": "true"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 203, "title": "发动机转速", "unit": "prm", "value": "true"},
+            {"type": 202, "title": "当前设定点", "unit": "prm", "value": "false"},
+            {"type": 203, "title": "当前设定点", "unit": "prm", "value": "false"},
+            {"type": 204, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"}
+        ],
+        "title": "发动机状态"
+    },
+    {
+        "is_full": false,
+        "type": 100,
+        "items": [
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "99"}
+        ],
+        "title": "仪表盘"
+    },
+    {
+        "is_full": true,
+        "type": 300,
+        "items": [
+            {"type": 300, "value": "<h2>关于我们👍</h2><font color='red'>上海星融汽车科技有限公司</font>，是国家<b>重点</b>扶持的高新技术企业，拥有专利及著作权40余项。公司聚焦商用车后市场领域，为全国商用车维修技师提供技术服务。<br>共轨之家服务全国的商用车维修站，用户数量超过<font color='green'>40万人</font>，是一家以商用车维修技术为主轴，后市场大数据为驱动的互联网数据公司。<br>公司意在构建一个商用车后市场的产业互联网，通过多重数据抓手，切入商用车后市场，打造商用车维保大数据，<u>以形成立体的竞争壁垒</u>，进而推动整个商用车后市场的产业升级进程。"}
+        ],
+        "title": "仪表盘"
+    },
+    {
+        "is_full": true,
+        "type": 100,
+        "items": [
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"}
+        ],
+        "title": "仪表盘"
+    },
+    {
+        "is_full": false,
+        "type": 200,
+        "items": [
+            {"type": 204, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"}
+        ],
+        "title": "系统变量"
+    },
+    {
+        "is_full": false,
+        "type": 200,
+        "items": [
+            {"type": 202, "title": "当前设定点", "unit": "prm", "value": "true"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 203, "title": "发动机转速", "unit": "prm", "value": "true"},
+            {"type": 202, "title": "当前设定点", "unit": "prm", "value": "false"},
+            {"type": 203, "title": "当前设定点", "unit": "prm", "value": "false"},
+            {"type": 204, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"}
+        ],
+        "title": "发动机状态"
+    },
+    {
+        "is_full": false,
+        "type": 100,
+        "items": [
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "99"}
+        ],
+        "title": "仪表盘"
+    },
+    {
+        "is_full": true,
+        "type": 300,
+        "items": [
+            {"type": 300, "value": "<h2>关于我们👍</h2><font color='red'>上海星融汽车科技有限公司</font>，是国家<b>重点</b>扶持的高新技术企业，拥有专利及著作权40余项。公司聚焦商用车后市场领域，为全国商用车维修技师提供技术服务。<br>共轨之家服务全国的商用车维修站，用户数量超过<font color='green'>40万人</font>，是一家以商用车维修技术为主轴，后市场大数据为驱动的互联网数据公司。<br>公司意在构建一个商用车后市场的产业互联网，通过多重数据抓手，切入商用车后市场，打造商用车维保大数据，<u>以形成立体的竞争壁垒</u>，进而推动整个商用车后市场的产业升级进程。"}
+        ],
+        "title": "仪表盘"
+    },
+    {
+        "is_full": true,
+        "type": 100,
+        "items": [
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"}
+        ],
+        "title": "仪表盘"
+    },
+    {
+        "is_full": false,
+        "type": 200,
+        "items": [
+            {"type": 204, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"}
+        ],
+        "title": "系统变量"
+    },
+    {
+        "is_full": false,
+        "type": 200,
+        "items": [
+            {"type": 202, "title": "当前设定点", "unit": "prm", "value": "true"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 203, "title": "发动机转速", "unit": "prm", "value": "true"},
+            {"type": 202, "title": "当前设定点", "unit": "prm", "value": "false"},
+            {"type": 203, "title": "当前设定点", "unit": "prm", "value": "false"},
+            {"type": 204, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"}
+        ],
+        "title": "发动机状态"
+    },
+    {
+        "is_full": false,
+        "type": 100,
+        "items": [
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "99"}
+        ],
+        "title": "仪表盘"
+    },
+    {
+        "is_full": true,
+        "type": 300,
+        "items": [
+            {"type": 300, "value": "<h2>关于我们👍</h2><font color='red'>上海星融汽车科技有限公司</font>，是国家<b>重点</b>扶持的高新技术企业，拥有专利及著作权40余项。公司聚焦商用车后市场领域，为全国商用车维修技师提供技术服务。<br>共轨之家服务全国的商用车维修站，用户数量超过<font color='green'>40万人</font>，是一家以商用车维修技术为主轴，后市场大数据为驱动的互联网数据公司。<br>公司意在构建一个商用车后市场的产业互联网，通过多重数据抓手，切入商用车后市场，打造商用车维保大数据，<u>以形成立体的竞争壁垒</u>，进而推动整个商用车后市场的产业升级进程。"}
+        ],
+        "title": "仪表盘"
+    },
+    {
+        "is_full": true,
+        "type": 100,
+        "items": [
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"}
+        ],
+        "title": "仪表盘"
+    },
+    {
+        "is_full": false,
+        "type": 200,
+        "items": [
+            {"type": 204, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"}
+        ],
+        "title": "系统变量"
+    },
+    {
+        "is_full": false,
+        "type": 200,
+        "items": [
+            {"type": 202, "title": "当前设定点", "unit": "prm", "value": "true"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 203, "title": "发动机转速", "unit": "prm", "value": "true"},
+            {"type": 202, "title": "当前设定点", "unit": "prm", "value": "false"},
+            {"type": 203, "title": "当前设定点", "unit": "prm", "value": "false"},
+            {"type": 204, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"}
+        ],
+        "title": "发动机状态"
+    },
+    {
+        "is_full": false,
+        "type": 100,
+        "items": [
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "30"},
+            {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"},
+            {"type": 101, "max": "100", "min": "1", "title": "进气置管压力", "unit": "k/h", "value": "99"}
+        ],
+        "title": "仪表盘"
+    },
+    {
+        "is_full": true,
+        "type": 300,
+        "items": [
+            {"type": 300, "value": "<h2>关于我们👍</h2><font color='red'>上海星融汽车科技有限公司</font>，是国家<b>重点</b>扶持的高新技术企业，拥有专利及著作权40余项。公司聚焦商用车后市场领域，为全国商用车维修技师提供技术服务。<br>共轨之家服务全国的商用车维修站，用户数量超过<font color='green'>40万人</font>，是一家以商用车维修技术为主轴，后市场大数据为驱动的互联网数据公司。<br>公司意在构建一个商用车后市场的产业互联网，通过多重数据抓手，切入商用车后市场，打造商用车维保大数据，<u>以形成立体的竞争壁垒</u>，进而推动整个商用车后市场的产业升级进程。"}
+        ],
+        "title": "仪表盘"
+    }
+]

@@ -44,6 +44,7 @@ internal class FragmentGas : FragmentBase(), View.OnClickListener {
 
         mViewBinding.btn001.setOnClickListener(this)
         mViewBinding.btn002.setOnClickListener(this)
+        mViewBinding.btn003.setOnClickListener(this)
 
         Single.just(Unit)
             .subscribeOn(Schedulers.io())
@@ -66,6 +67,7 @@ internal class FragmentGas : FragmentBase(), View.OnClickListener {
             mTopBarButtonBack   -> onClickTopBarBack(view)
             mViewBinding.btn001 -> onClickLeftButton001(view)
             mViewBinding.btn002 -> onClickLeftButton002(view)
+            mViewBinding.btn003 -> onClickLeftButton003(view)
         }
     }
 
@@ -91,9 +93,22 @@ internal class FragmentGas : FragmentBase(), View.OnClickListener {
         val context: Context = view.context
         val jsonData = context.assets.open("json/data02.json").reader(charset = Charsets.UTF_8).readText()
         val gasDataList = mGson.fromJson(jsonData, Array<GasPojoSummary>::class.java)
-        val isSlideable = mViewBinding.slidingPaneLayout.isOpen
         val delay: Long = if (mViewBinding.slidingPaneLayout.isOpen) 300L else 1L
-        logger.info("LOG:FragmentGas:onClickLeftButton002:isSlideable={} ", isSlideable)
+
+        val content = FragmentGasContent(gasDataList.toMutableList(), delay)
+        softReference = SoftReference(content)
+        val fragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.main_content, content)
+        fragmentTransaction.commit()
+
+        mViewBinding.slidingPaneLayout.closePane()
+    }
+
+    private fun onClickLeftButton003(view: View) {
+        val context: Context = view.context
+        val jsonData = context.assets.open("json/data03.json").reader(charset = Charsets.UTF_8).readText()
+        val gasDataList = mGson.fromJson(jsonData, Array<GasPojoSummary>::class.java)
+        val delay: Long = if (mViewBinding.slidingPaneLayout.isOpen) 300L else 1L
 
         val content = FragmentGasContent(gasDataList.toMutableList(), delay)
         softReference = SoftReference(content)

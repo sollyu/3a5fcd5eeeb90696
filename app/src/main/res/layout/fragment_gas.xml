@@ -29,14 +29,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@mipmap/ic_launcher"
-                    android:text="页面1" />
+                    android:text="标准内容01" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_002"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@mipmap/ic_launcher"
-                    android:text="页面2" />
+                    android:text="标准内容02" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_003"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@mipmap/ic_launcher"
+                    android:text="超多内容01" />
             </androidx.appcompat.widget.LinearLayoutCompat>
         </FrameLayout>
 
@@ -44,7 +51,7 @@
             android:id="@+id/main_content"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="70dp"
+            android:layout_marginStart="63dp"
             android:background="@android:color/holo_purple"
             tools:layout_marginStart="150dp" />
 

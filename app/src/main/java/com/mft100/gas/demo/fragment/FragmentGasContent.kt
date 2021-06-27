@@ -41,7 +41,7 @@ import kotlin.random.Random
 
 @FragmentScoped
 @AndroidEntryPoint
-internal class FragmentGasContent(private val mutableList: MutableList<GasPojoSummary>,val delay: Long) : Fragment() {
+internal class FragmentGasContent(private val mutableList: MutableList<GasPojoSummary>, val delay: Long) : Fragment() {
 
     private lateinit var mViewBinding: FragmentGasContentBinding
     private lateinit var mEmptyView: QMUIEmptyView
@@ -100,6 +100,11 @@ internal class FragmentGasContent(private val mutableList: MutableList<GasPojoSu
                     updateFunction(positionMajor = 2, positionMinor = 1)
                 if (mRecyclerViewAdapt.data[3].itemType == ConstantGasType.DASHBOARD)
                     updateFunction(positionMajor = 3, positionMinor = 0)
+
+                // page 3
+                if (mRecyclerViewAdapt.data.getOrNull(index = 23)?.itemType == ConstantGasType.DASHBOARD)
+                    updateFunction(positionMajor = 23, positionMinor = 0)
+
             }
 
         mJavascriptEngine.executeScript(context.assets.open("scripts/demo.js"), charset = Charsets.UTF_8)
@@ -118,7 +123,7 @@ internal class FragmentGasContent(private val mutableList: MutableList<GasPojoSu
                 }
             })
 
-        mViewBinding.root.postDelayed({mRecyclerViewAdapt.setList(mutableList)}, delay)
+        mViewBinding.root.postDelayed({ mRecyclerViewAdapt.setList(mutableList) }, delay)
     }
 
     override fun onDestroy() {
