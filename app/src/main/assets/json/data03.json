@@ -19,7 +19,7 @@
             {"type": 101, "max": "100", "min": "1", "title": "节气门位置", "unit": "Kpa", "value": "70"},
             {"type": 102, "title": "MIL故障指示灯", "value": "https://www.baidu.com"}
         ],
-        "title": "仪表盘"
+        "title": "超多内容01"
     },
     {
         "is_full": false,
