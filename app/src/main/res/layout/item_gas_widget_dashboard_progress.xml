@@ -18,7 +18,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:qmui_max_value="100"
-        app:qmui_type="type_fill_circle"
+        app:qmui_progress_color="@android:color/holo_red_light"
+        app:qmui_stroke_width="10dp"
+        app:qmui_type="type_circle"
         app:qmui_value="10" />
 
     <View
