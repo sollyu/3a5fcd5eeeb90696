@@ -25,9 +25,9 @@
         "is_full": false,
         "type": 200,
         "items": [
-            {"type": 0, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
-            {"type": 0, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
-            {"type": 0, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"}
+            {"type": 204, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"}
         ],
         "title": "系统变量"
     },
@@ -35,12 +35,14 @@
         "is_full": false,
         "type": 200,
         "items": [
-            {"type": 0, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
-            {"type": 0, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
-            {"type": 0, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
-            {"type": 0, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
-            {"type": 0, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
-            {"type": 0, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"}
+            {"type": 202, "title": "当前设定点", "unit": "prm", "value": "true"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 203, "title": "发动机转速", "unit": "prm", "value": "true"},
+            {"type": 202, "title": "当前设定点", "unit": "prm", "value": "false"},
+            {"type": 203, "title": "当前设定点", "unit": "prm", "value": "false"},
+            {"type": 204, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "当前设定点", "unit": "prm", "value": "saiukjsa"},
+            {"type": 201, "title": "发动机转速", "unit": "prm", "value": "saiukjsa"}
         ],
         "title": "发动机状态"
     },

@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory
 import java.io.InputStream
 import java.lang.ref.SoftReference
 import java.nio.charset.Charset
+import java.util.concurrent.Executors
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -65,6 +66,7 @@ internal class ProvideJavascriptEngine @Inject constructor() {
 
             mLogger.info("LOG:RxJavaCompletableExecuteScript:subscribeActual:1={} ", Thread.currentThread().name)
             try {
+                Executors.newCachedThreadPool()
                 // 执行脚本
                 mJavascriptEngine.executeVoidScript(script)
                 Looper.prepare()

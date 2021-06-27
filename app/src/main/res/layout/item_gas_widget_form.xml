@@ -29,6 +29,8 @@
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
             android:padding="10dp"
             android:scrollbarStyle="insideInset" />
 

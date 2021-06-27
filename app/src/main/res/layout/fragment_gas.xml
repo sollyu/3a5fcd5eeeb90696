@@ -8,6 +8,7 @@
     app:qmui_skin_background="?attr/app_skin_common_background">
 
     <androidx.slidingpanelayout.widget.SlidingPaneLayout
+        android:id="@+id/sliding_pane_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="?attr/qmui_topbar_height">

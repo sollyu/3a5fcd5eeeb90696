@@ -10,10 +10,14 @@ import com.mft100.gas.demo.databinding.FragmentGasBinding
 import com.mft100.gas.demo.fragment.gas.pojo.GasPojoSummary
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.scopes.FragmentScoped
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
+import io.reactivex.rxjava3.core.Single
+import io.reactivex.rxjava3.schedulers.Schedulers
 import org.jetbrains.annotations.NotNull
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import java.lang.ref.SoftReference
+import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
 @FragmentScoped
@@ -38,12 +42,23 @@ internal class FragmentGas : FragmentBase(), View.OnClickListener {
         mTopBarButtonBack.setOnClickListener(this)
 
         mViewBinding.btn001.setOnClickListener(this)
+        mViewBinding.btn002.setOnClickListener(this)
+
+        Single.just(Unit)
+            .subscribeOn(Schedulers.io())
+            .delay(300, TimeUnit.MILLISECONDS)
+            .map { mViewBinding.slidingPaneLayout.openPane() }
+            .delay(1, TimeUnit.SECONDS)
+            .map { mViewBinding.slidingPaneLayout.closePane() }
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe()
     }
 
     override fun onClick(@NotNull view: View) {
         when (view) {
             mTopBarButtonBack   -> onClickTopBarBack(view)
             mViewBinding.btn001 -> onClickLeftButton001(view)
+            mViewBinding.btn002 -> onClickLeftButton002(view)
         }
     }
 
@@ -54,13 +69,38 @@ internal class FragmentGas : FragmentBase(), View.OnClickListener {
         val context: Context = view.context
         val jsonData = context.assets.open("json/data01.json").reader(charset = Charsets.UTF_8).readText()
         val gasDataList = mGson.fromJson(jsonData, Array<GasPojoSummary>::class.java)
-        logger.info("LOG:FragmentGas:onClickLeftButton001:l11={} ", mGson.toJson(gasDataList))
 
-        val content = FragmentGasContent(gasDataList.toMutableList())
-        softReference = SoftReference(content)
+        val loadingFragment = FragmentGasLoading()
         val fragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.main_content, content)
+        fragmentTransaction.replace(R.id.main_content, loadingFragment)
         fragmentTransaction.commit()
+
+        view.postDelayed({
+            val content = FragmentGasContent(gasDataList.toMutableList())
+            softReference = SoftReference(content)
+            val fragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.main_content, content)
+            fragmentTransaction.commit()
+        }, 1)
+    }
+
+    private fun onClickLeftButton002(view: View) {
+        val context: Context = view.context
+        val jsonData = context.assets.open("json/data02.json").reader(charset = Charsets.UTF_8).readText()
+        val gasDataList = mGson.fromJson(jsonData, Array<GasPojoSummary>::class.java)
+
+        val loadingFragment = FragmentGasLoading()
+        val fragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.main_content, loadingFragment)
+        fragmentTransaction.commit()
+
+        view.postDelayed({
+            val content = FragmentGasContent(gasDataList.toMutableList())
+            softReference = SoftReference(content)
+            val fragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.main_content, content)
+            fragmentTransaction.commit()
+        }, 1)
     }
 
     private fun onClickTopBarBack(view: View) {
