@@ -16,7 +16,7 @@ data class GasPojoSummary(
     var isFull: Boolean = false,
 
     @SerializedName(value = "items")
-    var items: List<Item> = listOf()
+    var items: ArrayList<Item> = arrayListOf()
 
 ) : MultiItemEntity {
     data class Item(

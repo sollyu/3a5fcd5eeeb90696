@@ -72,6 +72,8 @@ internal class FragmentGasContent(private val mutableList: MutableList<GasPojoSu
         mRecyclerViewAdapt.animationEnable = true
         mRecyclerViewAdapt.setAnimationWithDefault(BaseQuickAdapter.AnimationType.AlphaIn)
 
+        mViewBinding.root.postDelayed({ mRecyclerViewAdapt.setList(mutableList) }, delay)
+
         Observable.interval(5000, 100, TimeUnit.MILLISECONDS)
             .subscribeOn(Schedulers.io())
             .bindToLifecycle(owner = this)
@@ -107,6 +109,37 @@ internal class FragmentGasContent(private val mutableList: MutableList<GasPojoSu
 
             }
 
+        Observable.interval(6, 30, TimeUnit.SECONDS)
+            .subscribeOn(Schedulers.io())
+            .bindToLifecycle(owner = this)
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe {
+                fun updateFunction(positionMajor: Int) {
+                    val randomItemList = arrayOf(
+                        GasPojoSummary.Item(title = "随机1", itemType = ConstantGasType.FORM_TOGGLE, value = "true"),
+                        GasPojoSummary.Item(title = "随机2", itemType = ConstantGasType.FORM_TEXT, value = "256461"),
+                        GasPojoSummary.Item(title = "随机3", itemType = ConstantGasType.FORM_SWITCH, value = "false")
+                    )
+
+                    val arrayList: ArrayList<GasPojoSummary.Item> = ArrayList()
+                    for (i in 0 until Random.nextInt(from = 1, until = 15)) {
+                        arrayList.add(randomItemList.random())
+                    }
+                    mRecyclerViewAdapt.data[positionMajor].items.clear()
+                    mRecyclerViewAdapt.data[positionMajor].items.addAll(arrayList)
+                    mRecyclerViewAdapt.notifyItemChanged(positionMajor)
+
+                    mViewBinding.root.post { mRecyclerViewAdapt.notifyItemChanged(positionMajor) }
+                }
+
+                // page 1
+                if (mRecyclerViewAdapt.data[1].itemType == ConstantGasType.FORM)
+                    updateFunction(positionMajor = 1)
+                // page 2
+                if (mRecyclerViewAdapt.data[4].itemType == ConstantGasType.FORM)
+                    updateFunction(positionMajor = 4)
+            }
+
         mJavascriptEngine.executeScript(context.assets.open("scripts/demo.js"), charset = Charsets.UTF_8)
             .subscribeOn(Schedulers.newThread())
             .bindUntilEvent(owner = this, event = Lifecycle.Event.ON_DESTROY)
@@ -123,7 +156,6 @@ internal class FragmentGasContent(private val mutableList: MutableList<GasPojoSu
                 }
             })
 
-        mViewBinding.root.postDelayed({ mRecyclerViewAdapt.setList(mutableList) }, delay)
     }
 
     override fun onDestroy() {
@@ -149,7 +181,6 @@ internal class FragmentGasContent(private val mutableList: MutableList<GasPojoSu
             val layoutParams = holder.itemView.layoutParams as StaggeredGridLayoutManager.LayoutParams
             layoutParams.isFullSpan = item.isFull
             holder.itemView.layoutParams = layoutParams
-
 
             when (item.itemType) {
                 ConstantGasType.DASHBOARD -> GasWidgetDashboard.convert(holder, ItemGasWidgetDashboardBinding.bind(holder.itemView), item)

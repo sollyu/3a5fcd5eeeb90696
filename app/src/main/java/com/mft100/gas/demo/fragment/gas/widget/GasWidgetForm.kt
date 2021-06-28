@@ -2,7 +2,6 @@ package com.mft100.gas.demo.fragment.gas.widget
 
 import android.content.Context
 import android.view.KeyEvent
-import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.chad.library.adapter.base.BaseMultiItemQuickAdapter
@@ -11,21 +10,18 @@ import com.mft100.gas.demo.R
 import com.mft100.gas.demo.constant.ConstantGasType
 import com.mft100.gas.demo.databinding.*
 import com.mft100.gas.demo.fragment.gas.pojo.GasPojoSummary
-import org.slf4j.Logger
-import org.slf4j.LoggerFactory
 
 internal object GasWidgetForm {
 
     fun convert(holder: BaseViewHolder, viewBinding: ItemGasWidgetFormBinding, item: GasPojoSummary) {
         holder.setIsRecyclable(false)
         val context: Context = viewBinding.root.context
-        val adapter = QuickAdapter()
+        val adapter = viewBinding.recyclerView.getTag(R.id.tag_adapter) as QuickAdapter? ?: QuickAdapter()
+
         viewBinding.tvTitle.text = item.title
         viewBinding.recyclerView.adapter = adapter
         viewBinding.recyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         viewBinding.recyclerView.setTag(R.id.tag_adapter, adapter)
-        viewBinding.recyclerView.descendantFocusability = ViewGroup.FOCUS_BEFORE_DESCENDANTS;
-        viewBinding.tvTitle.text = item.title
         adapter.setList(item.items)
     }
 
