@@ -16,10 +16,8 @@ import com.mft100.gas.demo.fragment.gas.pojo.GasPojoSummary
 internal object GasWidgetDashboard {
 
     fun convert(holder: BaseViewHolder, viewBinding: ItemGasWidgetDashboardBinding, item: GasPojoSummary) {
-        holder.setIsRecyclable(false)
-
         val context: Context = viewBinding.root.context
-        val adapter = MultipleItemQuickAdapter()
+        val adapter = viewBinding.recyclerView.getTag(R.id.tag_adapter) as MultipleItemQuickAdapter? ?: MultipleItemQuickAdapter()
         val flexboxLayoutManager = FlexboxLayoutManager(context)
         flexboxLayoutManager.flexDirection = FlexDirection.ROW
         flexboxLayoutManager.justifyContent = JustifyContent.FLEX_START

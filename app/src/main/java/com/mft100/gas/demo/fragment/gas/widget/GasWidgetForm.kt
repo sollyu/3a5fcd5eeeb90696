@@ -14,7 +14,6 @@ import com.mft100.gas.demo.fragment.gas.pojo.GasPojoSummary
 internal object GasWidgetForm {
 
     fun convert(holder: BaseViewHolder, viewBinding: ItemGasWidgetFormBinding, item: GasPojoSummary) {
-        holder.setIsRecyclable(false)
         val context: Context = viewBinding.root.context
         val adapter = viewBinding.recyclerView.getTag(R.id.tag_adapter) as QuickAdapter? ?: QuickAdapter()
 

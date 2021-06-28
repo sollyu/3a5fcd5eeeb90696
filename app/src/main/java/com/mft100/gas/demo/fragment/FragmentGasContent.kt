@@ -109,7 +109,7 @@ internal class FragmentGasContent(private val mutableList: MutableList<GasPojoSu
 
             }
 
-        Observable.interval(6, 30, TimeUnit.SECONDS)
+        Observable.interval(6, 10, TimeUnit.SECONDS)
             .subscribeOn(Schedulers.io())
             .bindToLifecycle(owner = this)
             .observeOn(AndroidSchedulers.mainThread())
@@ -128,8 +128,6 @@ internal class FragmentGasContent(private val mutableList: MutableList<GasPojoSu
                     mRecyclerViewAdapt.data[positionMajor].items.clear()
                     mRecyclerViewAdapt.data[positionMajor].items.addAll(arrayList)
                     mRecyclerViewAdapt.notifyItemChanged(positionMajor)
-
-                    mViewBinding.root.post { mRecyclerViewAdapt.notifyItemChanged(positionMajor) }
                 }
 
                 // page 1
